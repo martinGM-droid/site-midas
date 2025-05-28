@@ -1,0 +1,655 @@
+/* Global styles by class, tags and fonts */
+
+:root {
+      --background-color: linear-gradient(115deg, rgb(17, 62, 116) 11%, rgb(15, 34, 75) 27%, rgb(9, 14, 28) 49%);
+      --text-color: #FFFFFF;
+      --text-color-black: #000000;
+      --text-color-grey: #9EA2AA;
+      --text-color-yellow: #FBD13E;
+      --text-color-active: #FBD13E;
+      --background-color-card: #000000;
+
+      --text-serving-color: #FFFFFF;
+      --background-serving-color: rgba(255, 255, 255, 0.3);
+      --description-text-color: rgba(255, 255, 255, 0.8);
+      --text-price-color: #FFFFFF;
+      --text-old-price-color: rgba(255, 255, 255, 0.8);
+      --button-buy-color: #FBD13E;
+      --border-button-buy-count-color: #FBD13E;
+      --text-button-buy-count-color: #FBD13E;
+      --button-buy-count-color: none;
+
+      --text-dropdown-color: #FFFFFF;
+      --background-dropdown-color: #000000;
+      --background-footer-color: #000000;
+      --background-variety-card-color: #000000;
+
+      --color-scrollbar-thumb: rgb(15, 15, 113);
+      --background-color-scrollbar: rgba(255, 255, 255, 0.2);
+}
+
+/* ? Global class */
+
+.visable {
+      display: block;
+}
+
+
+/* ?  !!!!!!!!!!!!!!  */
+
+
+body {
+      padding: 0;
+      margin: 0;
+      background: var(--background-color);
+
+      /* background-attachment: fixed; */
+}
+
+body::-webkit-scrollbar {
+      width: 1.2rem;
+}
+
+
+body::-webkit-scrollbar-thumb {
+      cursor: pointer;
+      background: var(--color-scrollbar-thumb);
+      border-radius: 1rem;
+      border: 0.25rem solid transparent;
+      background-clip: content-box;
+      /* Фон только внутри контента (без границ) */
+      box-sizing: border-box;
+      /* Учитываем границы в расчётах */
+}
+
+
+body::-webkit-scrollbar-track {
+      background-color: var(--background-color-scrollbar);
+      border-radius: 0.6rem;
+}
+
+
+
+
+header {
+      position: sticky;
+      top: 2rem;
+      z-index: 100;
+      -webkit-user-select: none;
+      /* Safari */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* IE10+ */
+      user-select: none;
+}
+
+button {
+      cursor: pointer;
+}
+
+
+/* * header */
+.header-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5.2rem;
+      margin-left: 3.5rem;
+      margin-right: 3.5rem;
+      height: 3rem;
+      /* width: auto; */
+}
+
+.header-container * a {
+      text-decoration: none;
+      color: var(--text-color);
+}
+
+.header-container * a:visited {
+      color: none;
+}
+
+
+.header-logo {
+      width: 16.9rem;
+      height: 3rem;
+      cursor: pointer;
+}
+
+
+.header-logo svg {
+      width: 17rem;
+      height: 3rem;
+}
+
+
+
+.header-navbar {
+      display: flex;
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      align-items: center;
+      padding-right: 7.5rem;
+}
+
+
+.nav>ul {
+      display: flex;
+      align-items: center;
+      gap: 4.5rem;
+      padding: 0;
+      margin: 0;
+}
+
+.nav>ul>li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+}
+
+.nav>ul>li>a {
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      color: var(--text-color);
+}
+
+
+.nav li:first-child img {
+      width: 1.8rem;
+      height: auto;
+}
+
+
+/* .nav li:nth-child(2) svg{
+   
+}
+
+.nav li:nth-child(3) svg{
+      width: 1rem;
+      height: 0.6rem;
+} */
+
+details {
+      display: inline-flex;
+      position: relative;
+      cursor: pointer;
+      -webkit-user-select: none;
+      /* Safari */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* IE10+ */
+      user-select: none;
+}
+
+summary {
+      display: inline-flex;
+      align-items: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #FFFFFF;
+}
+
+summary svg {
+      width: 1rem;
+      height: 0.6rem;
+      margin-left: 0.2rem;
+      transform: rotate(180deg);
+      transition: transform 0.3s ease;
+}
+
+details[open] summary svg {
+      transform: rotate(0deg);
+}
+
+
+
+details[open] .hot {
+      position: absolute;
+      top: 3rem;
+      right: -15.2rem;
+
+      background-color: var(--background-dropdown-color);
+      z-index: 1000;
+}
+
+
+
+details[open] .cold {
+      position: absolute;
+      top: 3rem;
+      right: -12.5rem;
+      background-color: var(--background-dropdown-color);
+      z-index: 1000;
+}
+
+
+.dropdown {
+      display: flex;
+      box-sizing: border-box;
+      padding-left: 2rem;
+      align-items: center;
+      width: 24rem;
+      height: 15.5rem;
+      background-color: var(--background-dropdown-color);
+}
+
+.dropdown-container>p>a {
+      display: inline-block;
+      width: 20rem;
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+}
+
+
+.navbar-icons {
+      display: flex;
+      align-items: flex-start;
+      gap: 3rem;
+}
+
+.navbar-icons img {
+      cursor: pointer;
+}
+
+.navbar-icons img:nth-child(1) {
+      width: 2.4rem;
+      height: auto;
+}
+
+.navbar-icons img:nth-child(2) {
+      width: 1.5rem;
+      height: 2.4rem;
+}
+
+.navbar-icons img:nth-child(3) {
+      width: 2.7rem;
+      height: 2.5rem;
+}
+
+.cart-hf-comtainer {
+      display: flex;
+}
+
+.cart-hf-count-box {
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      justify-self: center;
+      position: relative;
+      right: 3.7rem;
+      bottom: 0.8rem;
+      width: 2rem;
+      height: 1.5rem;
+      /* box-sizing: border-box; */
+      background-color: var(--text-color-yellow);
+      border-radius: 0.5rem;
+      border: 0.3rem solid var(--text-color-black);
+}
+
+.cart-hf-count-box-none{
+      display: none;
+}
+
+.cart-hf-count {
+      margin: 0;
+      color: var(--text-color-black);
+      font-family: "Montserrat", serif;
+      font-size: 1.2rem;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+}
+
+
+
+/* [data-cart]{
+      width: 23.3rem;
+      height: 44.4rem;
+      background-color: aliceblue;
+      box-sizing: border-box;
+} */
+
+/* * history elm */
+.history-before {
+      color: var(--text-color);
+      font-family: "Montserrat", serif;
+      font-size: 1.3rem;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+}
+
+.slash {
+      color: var(--text-color);
+      font-family: "Montserrat", serif;
+      font-size: 1.3rem;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+}
+
+
+.history-last {
+      color: var(--text-color-grey);
+      font-family: "Montserrat", serif;
+      font-size: 1.3rem;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+}
+
+/* ! */
+
+
+
+
+
+
+.card-container {
+      width: 23.3rem;
+      height: 44.4rem;
+      /* background-color: rgb(30, 66, 97); */
+      box-sizing: border-box;
+
+
+}
+
+.card-img {
+      width: 23.3rem;
+      height: 23.3rem;
+}
+
+.name-dish {
+      height: 4.5rem;
+      width: 23.5rem;
+      margin: 0;
+      margin-bottom: 0.5rem;
+      color: var(--text-color);
+      font-family: "Montserrat", serif;
+      font-size: 2rem;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+}
+
+.weight-container {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 4.7rem;
+      height: 2rem;
+      border-radius: 10%;
+      background-color: var(--background-serving-color);
+}
+
+.weight {
+      color: var(--text-color);
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-size: 1.3rem;
+      font-weight: 500;
+      font-style: normal;
+}
+
+
+
+
+.description {
+      height: 7.8rem;
+      margin-bottom: 0;
+      color: var(--description-text-color);
+      font-family: "Montserrat", serif;
+      font-size: 1.3rem;
+      line-height: 2.1rem;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+}
+
+
+.price-container>p {
+      margin: 0;
+}
+
+.old-price {
+      color: var(--text-old-price-color);
+      text-decoration: line-through;
+      font-family: "Montserrat", serif;
+      font-size: 1.8rem;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+}
+
+
+.price {
+      color: var(--text-price-color);
+      font-family: "Montserrat", serif;
+      font-size: 2.3rem;
+      font-optical-sizing: auto;
+      font-weight: 800;
+      font-style: normal;
+}
+
+
+.price-start {
+      color: var(--text-price-color);
+      font-family: "Montserrat", serif;
+      font-size: 1.8rem;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+}
+
+.price-start::after {
+      content: ' –';
+      color: var(--text-price-color);
+      font-family: "Montserrat", serif;
+      font-size: 1.8rem;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+}
+
+.price-end {
+      color: var(--text-price-color);
+      font-family: "Montserrat", serif;
+      font-size: 2.3rem;
+      font-optical-sizing: auto;
+      font-weight: 800;
+      font-style: normal;
+}
+
+.buy-container {
+      display: flex;
+
+      justify-content: start;
+      align-items: center;
+      margin-top: 0rem;
+      gap: 2rem;
+}
+
+.buy {
+      width: 4.2rem;
+      height: 4.2rem;
+      background-color: var(--button-buy-color);
+      background-image: url(/img/svg/basket_black.svg);
+      background-size: 2.6rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+
+}
+
+.buy-count {
+      display: flex;
+      position: relative;
+      bottom: 0.18rem;
+      justify-content: center;
+      align-items: center;
+      gap: 10%;
+      width: 12.8rem;
+      height: 4.2rem;
+      border: 0.1rem solid var(--border-button-buy-count-color);
+      background-color: var(--button-buy-count-color);
+}
+
+.count {
+      color: var(--text-button-buy-count-color);
+      font-family: "Montserrat", serif;
+      font-size: 1.3rem;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+}
+
+.count-text {
+      color: var(--text-button-buy-count-color);
+      font-family: "Montserrat", serif;
+      font-size: 1.3rem;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+}
+
+
+
+
+.footer-container {
+      display: inline-block;
+      margin-top: 16rem;
+      width: 100vw;
+      height: 16rem;
+      background-color: var(--background-dropdown-color);
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-size: 1.2rem;
+      font-weight: 500;
+      font-style: normal;
+      /* align-items: center; */
+}
+
+.footer-nav-box {
+      width: 150rem;
+      margin-left: 4rem;
+      margin-right: 5rem;
+}
+
+
+.footer-nav-box li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+}
+
+.footer-container * a {
+      text-decoration: underline;
+      color: var(--text-color);
+}
+
+.footer-container * a:visited {
+      color: none;
+}
+
+.footer-nav-box * p {
+      text-decoration: underline;
+      color: var(--text-color);
+      margin: 0;
+}
+
+
+/* .footer-nav-box ul{
+      padding: 0;
+} */
+.footer-nav-box * ul {
+      padding: 0;
+}
+
+
+
+
+.footer-logo {
+      display: inline-block;
+      /* margin-left: 3rem; */
+}
+
+.footer-logo svg {
+      width: 17rem;
+      height: 3rem;
+}
+
+
+.footer-nav-one {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3.5rem;
+      margin-bottom: 2rem;
+}
+
+.footer-nav-one ul {
+      display: flex;
+      gap: 3rem;
+      margin-bottom: 0;
+      align-items: flex-end;
+      /* margin-right: 5rem; */
+      margin-left: 0;
+}
+
+
+
+.footer-nav-one ul:nth-child(2) {
+      margin-right: 29rem;
+}
+
+.footer-nav-one :nth-child(3) li:first-child {
+      font-size: 2rem;
+}
+
+.line {
+      height: 0.1rem;
+      width: 100%;
+      background-color: gray;
+}
+
+.footer-nav-two {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+}
+
+.footer-nav-two ul {
+      display: flex;
+      gap: 2rem;
+}
+
+.font-medium {
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+}
+
+.font-semibold {
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+}
+
+.font-bold {
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+}
+
+.font-extrabold {
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-weight: 800;
+      font-style: normal;
+}

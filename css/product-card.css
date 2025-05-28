@@ -1,0 +1,306 @@
+
+
+
+
+.container-name-of-dishes {
+      margin-left: 4.3rem;
+      margin-top: 5.4rem;
+}
+
+.name-of-dishes {
+      height: 9.5rem;
+      width: 140.5rem;
+      margin: 0;
+      color: var(--text-color);
+      font-family: "Montserrat", serif;
+      font-size: 8rem;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+}
+
+.history {
+      display: flex;
+      gap: 1rem;
+      margin-left: 4.3rem;
+}
+
+.container-center {
+      display: flex;
+      gap: 6.5rem;
+}
+
+.container-center>div {
+      height: 53.5rem;
+      width: 74.5rem;
+      /* background-color: rgba(127, 255, 212, 0.256); */
+}
+
+.img-of-dish {
+      margin-top: 3rem;
+      height: 53.5rem;
+      width: 74.5rem;
+}
+
+.variety-text {
+      letter-spacing: 0.25rem;
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-size: 1.3rem;
+      font-weight: 500;
+      font-style: normal;
+      color: var(--text-color-grey);
+}
+
+
+.variety-card-container {
+      width: 74rem;
+      height: 34rem;
+      display: grid;
+      overflow-y: auto;
+      overflow-x: hidden;
+      gap: 1rem
+}
+
+
+.variety-card-container::-webkit-scrollbar {
+      width: 1.2rem;
+}
+
+.variety-card-container :-webkit-scrollbar-thumb {
+      cursor: pointer;
+      background: var(--color-scrollbar-thumb);
+      border-radius: 1rem;
+      border: 0.25rem solid transparent;
+      background-clip: content-box;
+      box-sizing: border-box;
+     
+}
+
+
+.variety-card-container::-webkit-scrollbar-track {
+      background-color: var(--background-color-scrollbar);
+      border-radius: 0.6rem;
+}
+
+
+.variety-card {
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      background-color: var(--background-variety-card-color);
+      align-items: center;
+      height: 10rem;
+      width: 74rem;
+}
+
+.variety-name-weight {
+      margin-left: 2rem;
+      width: 20rem;
+
+}
+
+.variety-name {
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-size: 2rem;
+      font-weight: 500;
+      font-style: normal;
+      color: var(--text-color);
+      margin-top: 0rem;
+      margin-bottom: 0.5rem;
+}
+
+.variety-weight-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 2rem;
+      background-color: var(--background-serving-color);
+      border-radius: 0.2rem;
+}
+
+.variety-weight {
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-size: 1.3rem;
+      font-weight: 500;
+      font-style: normal;
+      color: var(--text-color);
+      margin: 0;
+}
+
+
+
+
+.calculator {
+      position: relative;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      justify-content: space-between;
+      width: 8rem;
+      /* подберите под ваш контент */
+      height: 4rem;
+      padding: 0 1rem;
+      /* отступы, чтобы кнопки не накрывали боковую рамку */
+      background: transparent;
+      color: #fff;
+      /* цвет текста и иконок */
+      font-family: sans-serif;
+      font-size: 1.4rem;
+}
+
+/* сплошные линии сверху и снизу */
+.calculator::before,
+.calculator::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 0.1rem;
+      background: #ffffff;
+}
+
+.calculator::before {
+      top: 0;
+}
+
+.calculator::after {
+      bottom: 0;
+}
+
+/* боковые “разбитые” рамки */
+.calculator .side {
+      position: absolute;
+      top: 0;
+      width: 0.1rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+
+.calculator .side.left {
+      left: 0;
+}
+
+.calculator .side.right {
+      right: 0;
+}
+
+.calculator .side .seg {
+      width: 0.1rem;
+      height: 1.1rem;
+      /* (40 − 10) / 2 */
+      background: #bbb;
+}
+
+
+
+.calculator-display {
+      width: 100%;
+}
+
+.calculator-display>button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.2rem;
+      height: 3.2rem;
+      padding: 0;
+      background-color: transparent;
+      color: var(--text-color);
+      cursor: pointer;
+      border: none;
+}
+
+.calculator-display>button>svg {
+      width: 1.2rem;
+      height: 1.2rem;
+}
+
+.calculator-information {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+}
+
+.minus {
+      position: relative;
+      top: 3.8rem;
+      right: 2.5rem;
+}
+
+.plus {
+      position: relative;
+      bottom: 3.8rem;
+      left: 5.4rem;
+}
+
+
+
+
+
+.variety-prise-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3rem;
+      width: 15.5rem;
+      height: 4.4rem;
+      margin-right: 3rem;
+}
+
+.variety-prise {
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-weight: 800;
+      font-size: 2.3rem;
+      font-style: normal;
+      color: var(--text-color);
+}
+
+.description-text {
+      letter-spacing: 0.25rem;
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-size: 1.3rem;
+      font-weight: 500;
+      font-style: normal;
+      color: var(--text-color-grey);
+}
+
+.variety-description {
+      width: 60rem;
+      height: 7rem;
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-size: 1.6rem;
+      font-weight: 500;
+      font-style: normal;
+      color: var(--text-color);
+}
+
+.container-end>p {
+      width: 53.5rem;
+      height: 12.5rem;
+      margin-left: 5rem;
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-size: 5rem;
+      font-style: normal;
+      color: var(--text-color);
+}
+
+.food-recommendations {
+      display: flex;
+      margin-left: 5rem;
+      width: 74.5rem;
+      height: 45rem;
+      background-color: var(--background-variety-card-color);
+}
+
+

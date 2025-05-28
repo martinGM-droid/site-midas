@@ -1,0 +1,47 @@
+/* Styles of flex and grid */
+
+html,
+body {
+      overflow-x: hidden;
+      height: 100vh;
+      width: 100vw;
+}
+
+html{
+      /* *1600 px */
+      /* font-size: clamp(5px, 0.73vw, 58px); */
+      font-size: clamp(5px, 0.625vw, 58px);
+}
+
+ /* .page-container{
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+}  */
+
+
+/* * index section center  */
+
+.popular-dishes{
+      display: grid;
+      padding-left: 3rem;
+      padding-right: 2rem;
+      grid-template-columns: repeat(6, minmax(20rem, 24rem));
+      grid-gap: 2rem;
+}
+
+/*  */
+
+/* * index section end */
+
+
+.slider{
+      display: grid;
+      padding-left: 4.5rem;
+      padding-right: 4.5rem;
+      grid-template-columns: repeat(6, 23.3rem);
+      gap: 2rem;
+} 
+
+
+/*  */

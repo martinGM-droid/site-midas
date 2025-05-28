@@ -1,0 +1,368 @@
+[
+      {
+            "hasVariants": true,
+            "baseQuantity": 6,
+            "variantType": [
+                  {
+                        "id": 1,
+                        "img": "хинкали_с_сыром.jpg",
+                        "nameType": "Хинкали сыром",
+                        "weight": 80,
+                        "description": "Хинкали с расплавленным сыром внутри, в мягком тесте.",
+                        "price": 105
+                  },
+                  {
+                        "id": 2,
+                        "img": "Хинкали_традиционные.png",
+                        "nameType": "Хинкали традиционные",
+                        "weight": 80,
+                        "description": "Пряные хинкали с начинкой из ароматной баранины со специями.",
+                        "price": 115
+                  },
+                  {
+                        "id": 3,
+                        "img": "Хинкали_жаренные.png",
+                        "nameType": "Хинкали жаренные",
+                        "weight": 80,
+                        "description": "Хрустящие жареные хинкали с сочной мясной начинкой внутри.",
+                        "price": 125
+                  }
+            ],
+            "typesOfDishes": "khinkali",
+            "img": null,
+            "nameDish": null,
+            "weight": null,
+            "description": null,
+            "price": null,
+            "discount": null,
+            "disPrice": null
+      },
+      {
+            "hasVariants": false,
+            "id": 4,
+            "baseQuantity": null,
+            "variantType": null,
+            "typesOfDishes": "coldAppetizers",
+            "img": "Долма.png",
+            "nameDish": "Долма",
+            "weight": 350,
+            "description": "Невероятно ароматная начинка из рубленого мяса и свежей зелени, завернутая в виноградные листья, ...",
+            "price": 420,
+            "discount": false,
+            "disPrice": null
+      },
+      {
+            "hasVariants": false,
+            "id": 5,
+            "baseQuantity": null,
+            "variantType": null,
+            "typesOfDishes": "hotDishes",
+            "img": "Котлета_с_картофелем_по-деревенски.png",
+            "nameDish": "Котлета с картофелем по-деревенски",
+            "weight": 380,
+            "description": "По семейному рецепту: нежнейшее рубленное мясо с экологически чистыми ферме...",
+            "price": 420,
+            "discount": false,
+            "disPrice": null
+      },
+      {
+            "hasVariants": false,
+            "id": 6,
+            "baseQuantity": 2,
+            "variantType": null,
+            "typesOfDishes": "hotDishes",
+            "img": "пельмени_по-грузински.png",
+            "nameDish": "Пельмени по-грузински",
+            "weight": 120,
+            "description": "Печёные грузинские пельмени с мясом и пряностями в тесте.",
+            "price": 100,
+            "discount": false,
+            "disPrice": null
+      },
+      {
+            "hasVariants": false,
+            "id": 7,
+            "baseQuantity": null,
+            "variantType": null,
+            "typesOfDishes": "freshPastries",
+            "img": "пхали_с_фаршем.png",
+            "nameDish": "Пхали с фаршем",
+            "weight": 330,
+            "description": "Пхали с мясным фаршем, зеленью, специями и ореховой ноткой.",
+            "price": 350,
+            "discount": false,
+            "disPrice": null
+      },
+      {
+            "hasVariants": false,
+            "id": 8,
+            "baseQuantity": null,
+            "variantType": null,
+            "typesOfDishes": "salads",
+            "img": "слоеный_салат_с_красной_рыбой.png",
+            "nameDish": "Слоёный салат с красной рыбой",
+            "weight": 320,
+            "description": "Слоёный салат с нежной красной рыбой, авокадо и огурцом под зеленью.",
+            "price": 530,
+            "discount": true,
+            "disPrice": 15
+      },
+      {
+            "hasVariants": false,
+            "id": 9,
+            "baseQuantity": null,
+            "variantType": null,
+            "typesOfDishes": "dessert",
+            "img": "тирамису.png",
+            "nameDish": "Тирамису",
+            "weight": 430,
+            "description": "Нежное и пышное тирамису с кремом маскарпоне, бисквитом и какао.",
+            "price": 370,
+            "discount": null,
+            "disPrice": null
+      },
+      {
+            "hasVariants": false,
+            "id": 10,
+            "baseQuantity": null,
+            "variantType": null,
+            "typesOfDishes": "soups",
+            "img": "харчо.png",
+            "nameDish": "Харчо",
+            "weight": 480,
+            "description": "Острый говяжий суп с рисом, томатами, ткемали и кинзой.",
+            "price": 620,
+            "discount": true,
+            "disPrice": 20
+      },
+      {
+            "hasVariants": true,
+            "baseQuantity": null,
+            "variantType": [
+                  {
+                        "id": 11,
+                        "img": "хачапури_по_аджарски.png",
+                        "nameType": "Хачапури по-аджарски",
+                        "weight": 400,
+                        "description": "Хачапури по-аджарски с тёплым сыром и яйцом в лодочке.",
+                        "price": 380
+                  },
+                  {
+                        "id": 12,
+                        "img": "Хачапури_по_мегрельски.png",
+                        "nameType": "Хачапури по мегрельски",
+                        "weight": 340,
+                        "description": "Толстые лепёшки и сыром сулугуни и имерули и мацарели.",
+                        "price": 390
+                  },
+                  {
+                        "id": 13,
+                        "img": "Хачапури_с_мясом.png",
+                        "nameType": "Хачапури с мясом",
+                        "weight": 420,
+                        "description": "Сытный хачапури с мясной начинкой и хрустящей корочкой",
+                        "price": 450
+                  },
+                  {
+                        "id": 14,
+                        "img": "чесночный_хачапури.png",
+                        "nameType": "Чесночный хачапури",
+                        "weight": 310,
+                        "description": "Хачапури с ароматным чесноком и золотистой хрустящей коркой",
+                        "price": 240
+                  }
+            ],
+            "typesOfDishes": "freshPastries",
+            "img": null,
+            "nameDish": null,
+            "weight": null,
+            "description": null,
+            "price": null,
+            "discount": null,
+            "disPrice": null
+      },
+      {
+            "hasVariants": false,
+            "id": 15,
+            "baseQuantity": null,
+            "variantType": null,
+            "typesOfDishes": "hotDishes",
+            "img": "Чихохбили.png",
+            "nameDish": "Чихохбили",
+            "weight": 450,
+            "description": "Невероятно ароматная начинка из рубленого мяса и свежей зелени, завернутая в виноградные листья.",
+            "price": 980,
+            "discount": true,
+            "disPrice": 30
+      },
+      {
+            "hasVariants": false,
+            "id": 16,
+            "baseQuantity": null,
+            "variantType": null,
+            "typesOfDishes": "coldAppetizers",
+            "img": "Лобио_по-имеретински.png",
+            "nameDish": "Лобио по-имеретински",
+            "weight": 430,
+            "description": "Тушёная курица в остром соусе с зеленью и луком",
+            "price": 560,
+            "discount": true,
+            "disPrice": 10
+      },
+      {
+            "hasVariants": false,
+            "id": 17,
+            "baseQuantity": null,
+            "variantType": null,
+            "typesOfDishes": [
+                  "khinkali",
+                  "salads",
+                  "freshPastries"
+            ],
+            "img": "Ланч_низкокалорийный.png",
+            "nameDish": "Ланч низкокалорийный",
+            "weight": 1260,
+            "description": "Греческий йогурт с ягодами, 3 хинкали традиционных, салат цезарь, пирожки с уткой, морс",
+            "price": 1490,
+            "discount": true,
+            "disPrice": 18
+      },
+      {
+            "hasVariants": true,
+            "baseQuantity": null,
+            "variantType": [
+                  {
+                        "id": 18,
+                        "img": "Мороженное_крошка.jpg",
+                        "nameType": "Мороженное крошка",
+                        "weight": 180,
+                        "description": " Сливочное мороженое с нежным вкусом, посыпанное хрустящей шоколадной крошкой",
+                        "price": 245
+                  },
+                  {
+                        "id": 19,
+                        "img": "Мороженое_вишня.jpg",
+                        "nameType": "Мороженое вишня",
+                        "weight": 150,
+                        "description": "Нежное мороженое с вишнёвым сиропом сверху",
+                        "price": 240
+                  },
+                  {
+                        "id": 20,
+                        "img": "Мороженое_мультифрукт.jpg",
+                        "nameType": "Мороженое мультифрукт",
+                        "weight": 220,
+                        "description": " Освежающее мороженое с виноградом, киви и ананасом",
+                        "price": 290
+                  }
+            ],
+            "typesOfDishes": "dessert",
+            "img": null,
+            "nameDish": null,
+            "weight": null,
+            "description": null,
+            "price": null,
+            "discount": null,
+            "disPrice": null
+      },
+      {
+            "hasVariants": false,
+            "id": 21,
+            "baseQuantity": null,
+            "variantType": null,
+            "typesOfDishes": "dessert",
+            "img": "Морженое_неогарское.jpg",
+            "nameDish": "Морженое неогарское",
+            "weight": 450,
+            "description": "Сливочное мороженое с кусочками клубники, политое густым шоколадом",
+            "price": 570,
+            "discount": true,
+            "disPrice": 25
+      },
+      {
+            "hasVariants": true,
+            "baseQuantity": null,
+            "variantType": [
+                  {
+                        "id": 22,
+                        "img": "Cola.png",
+                        "nameType": "Кола",
+                        "weight": 450,
+                        "description": "Классическая газировка с карамельным вкусом и кофеином",
+                        "price": 100
+                  },
+                  {
+                        "id": 23,
+                        "img": "Cola-zero.png",
+                        "nameType": "Кола-Zero",
+                        "weight": 450,
+                        "description": "Версия «Колы» без сахара, с подсластителями",
+                        "price": 100
+                  }
+            ],
+            "typesOfDishes": "beverages",
+            "img": null,
+            "nameDish": null,
+            "weight": null,
+            "description": null,
+            "price": null,
+            "discount": null,
+            "disPrice": null
+      },
+      {
+            "hasVariants": false,
+            "id": 24,
+            "baseQuantity": null,
+            "variantType": null,
+            "typesOfDishes": "beverages",
+            "img": "Sprite.png",
+            "nameDish": "Спрайт",
+            "weight": 450,
+            "description": "Газированный лимонно-лаймовый напиток с яркой свежестью",
+            "price": 100,
+            "discount": true,
+            "disPrice": 10
+      },
+      {
+            "hasVariants": false,
+            "id": 25,
+            "baseQuantity": null,
+            "variantType": null,
+            "typesOfDishes": "beverages",
+            "img": "Fanta.png",
+            "nameDish": "Фанта",
+            "weight": 450,
+            "description": "Апельсиновый газированный напиток с фруктовым вкусом",
+            "price": 100,
+            "discount": true,
+            "disPrice": 15
+      },
+      {
+            "hasVariants": false,
+            "id": 26,
+            "baseQuantity": null,
+            "variantType": null,
+            "typesOfDishes": "beverages",
+            "img": "Apple-juice.png",
+            "nameDish": "Яблочный сок",
+            "weight": 300,
+            "description": "Натуральный или восстановленный сок с кисло-сладким вкусом",
+            "price": 60,
+            "discount": false,
+            "disPrice": null
+      },
+      {
+            "hasVariants": false,
+            "id": 27,
+            "baseQuantity": null,
+            "variantType": null,
+            "typesOfDishes": "sauses",
+            "img": "соус.png",
+            "nameDish": "Тайский соус",
+            "weight": 999,
+            "description": "Сука ебучий тайский соус как ебучая блядь за твои деньги будет каким хочешь как я заебался доделывать за дизайнером",
+            "price": 666,
+            "discount": false,
+            "disPrice": null
+      }
+]

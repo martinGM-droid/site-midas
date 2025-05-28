@@ -1,0 +1,160 @@
+/* Styles for layout and editing of homepage*/
+
+.section-container-start{
+      display: flex;
+      clear: both;
+      position: relative;
+      height: 110rem;
+}
+
+
+
+.dish-of-the-day{
+      height: 68rem;
+      width: 117rem;
+      position: absolute;
+      top: 4rem;
+      right: 0rem ;
+      bottom: 0;
+      background-color: antiquewhite;
+      background-image: url(/img/food/стейк_из_лосося.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* width: 40%; */
+}
+
+.fon-information-dish-of-the-day{
+      display: flex;
+      width: 35rem;
+      height: 35.7rem;
+      position: relative;
+      top: 68%;
+      left: 7.3rem;
+}
+
+.information-dish-of-the-day{
+      width: 22rem;
+      position: relative;
+      top: 15rem;
+      left: 11rem;
+      display: inline-block;
+      /* background-color: rgb(62, 179, 179); */
+}
+
+.information-dish-of-the-day p:nth-last-child(2){
+      margin-bottom: 2rem;
+}
+
+
+.name-dish-of-the-day{
+      margin: 0;
+      margin-bottom: 0.5rem;
+      color: var(--text-color);
+      font-family: "Montserrat", serif;
+      font-size: 2.5rem;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;  
+}
+
+.weight-dish-of-the-day{
+     display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 4.7rem;
+      height: 2rem;
+      border-radius: 10%;
+      background-color: var( --background-serving-color);
+}
+
+.buy-box-dish-of-the-day{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 2rem;
+}
+
+.dessert-container{
+      position: relative;
+      top: 80rem;
+      left: 2.4rem;
+      width: 24rem;
+      height: 36.5rem;
+}
+
+.img-dessert-of-the-day{
+     width: 23.3rem; 
+     height: 23.3rem;
+}
+
+.weight-dessert-of-the-day{
+      margin-bottom: 3rem;
+}
+
+/* .section-container-centre{
+      position: absolute;
+      left: 50rem;
+      
+} */
+
+
+
+.section-container-center > div > p{
+      width: 64.3rem;
+      height: 19.4rem;
+      color: var(--text-color);
+      margin: auto;
+      font-family: "Montserrat", serif;
+      font-size: 8rem;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      line-height: 9rem;
+}
+
+.section-container-end > div > p{
+      width: 64.3rem;
+      /* height: 13.4rem; */
+      color: var(--text-color);
+      margin: auto;
+      margin-top: 15rem;
+      font-family: "Montserrat", serif;
+      font-size: 8rem;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      line-height: 9rem;
+}
+
+.slider-button-box{
+      display: flex;
+      gap: 3.5rem;
+}
+
+.slider-btn{
+      position: relative;
+      bottom: 6rem;
+      left: 86.5%;
+      border: none;
+      background-color: transparent;
+}
+
+.slider-btn > svg{
+      height: 5.6rem;
+      width: 5.6rem;
+}
+
+
+.slider-box{
+      display: inline-block;
+}
+
+.slider-list{
+      display: inline-block;
+}
+
+.slider-list img{
+      height: 31.4rem;
+      width: 23.3rem;
+}
+

@@ -1,0 +1,385 @@
+
+.cart-text {
+      display: flex;
+}
+
+.text {
+      margin: 3.5rem;
+      margin-bottom: 0;
+      color: var(--text-color);
+      font-family: "Montserrat", serif;
+      font-size: 8rem;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+}
+
+.cart-count {
+      display: none;
+      position: relative;
+      bottom: 2rem;
+      right: 1.5rem;
+      color: var(--text-color-active);
+      font-family: "Montserrat", serif;
+      font-size: 5rem;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+}
+
+
+
+      .history {
+            display: flex;
+            gap: 1rem;
+            margin-left: 4.3rem;
+      }
+
+      .column-label {
+            display: flex;
+            margin-left: 30rem;
+            /* justify-content: space-between; */
+      }
+
+      .label {
+            position: relative;
+            color: var(--text-color-grey);
+            font-family: "Montserrat", serif;
+            font-size: 1.3rem;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+      }
+
+      .label:first-child {
+            left: 2rem;
+      }
+
+      .label:nth-child(2) {
+            left: 41.5rem;
+      }
+
+      .label:nth-child(3) {
+            left: 63rem;
+      }
+
+
+      .label:last-child {
+            left: 86rem;
+      }
+
+
+      .container-cart-card {
+            display: grid;
+            grid-auto-rows: 18rem;
+            width: 160rem;
+            min-height: 45rem;
+            max-height: 95rem;
+            /* height: 95rem; */
+            overflow-y: auto;
+            overflow-x: hidden;
+            gap: 1rem
+      }
+
+      .container-cart-card::-webkit-scrollbar {
+            height: 2rem;
+            margin-right: 1rem;
+            width: 1rem;
+      }
+
+      /* .container-cart-card :-webkit-scrollbar-thumb {
+      cursor: pointer;
+      background: var(--color-scrollbar-thumb);
+      border-radius: 1rem;
+      border: 0.25rem solid transparent;
+      background-clip: content-box;
+      box-sizing: border-box;
+     
+} */
+
+      /* .container-cart-card::-webkit-scrollbar-track {
+      background-color: var(--background-color-scrollbar);
+      border-radius: 0.6rem;
+} */
+
+
+      .cart-card {
+            display: flex;
+            width: 150rem;
+            height: 18rem;
+            margin-left: 5rem;
+            margin-right: 4rem;
+            background-color: var(--background-color-card);
+            align-items: center;
+      }
+
+      .img-cart-card {
+            width: 18rem;
+            height: 18rem;
+      }
+
+      .container-name-weight {
+            width: 28rem;
+            margin-left: 7rem;
+      }
+
+
+      .name-cart-card {
+            margin-bottom: 0.5rem;
+            margin-top: 0rem;
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            font-size: 2rem;
+            font-weight: 500;
+            font-style: normal;
+            color: var(--text-color);
+      }
+
+
+      .container-weight {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 3.7rem;
+            height: 2rem;
+            border-radius: 10%;
+            background-color: var(--background-serving-color);
+      }
+
+
+
+      .cart-card-price {
+            width: 7.1rem;
+            margin-left: 20rem;
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-size: 2.3rem;
+            font-style: normal;
+            color: var(--text-color);
+      }
+
+      .cart-card-calculator {
+            margin-left: 18rem;
+      }
+
+      .calculator {
+            position: relative;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            justify-content: space-between;
+            width: 8rem;
+            /* подберите под ваш контент */
+            height: 4rem;
+            padding: 0 1rem;
+            /* отступы, чтобы кнопки не накрывали боковую рамку */
+            background: transparent;
+            color: #fff;
+            /* цвет текста и иконок */
+            font-family: sans-serif;
+            font-size: 1.4rem;
+      }
+
+      /* сплошные линии сверху и снизу */
+      .calculator::before,
+      .calculator::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 0.1rem;
+            background: #ffffff;
+      }
+
+      .calculator::before {
+            top: 0;
+      }
+
+      .calculator::after {
+            bottom: 0;
+      }
+
+      /* боковые “разбитые” рамки */
+      .calculator .side {
+            position: absolute;
+            top: 0;
+            width: 0.1rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+      }
+
+      .calculator .side.left {
+            left: 0;
+      }
+
+      .calculator .side.right {
+            right: 0;
+      }
+
+      .calculator .side .seg {
+            width: 0.1rem;
+            height: 1.1rem;
+            /* (40 − 10) / 2 */
+            background: #bbb;
+      }
+
+
+
+      .calculator-display {
+            width: 100%;
+      }
+
+      .calculator-display>button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.2rem;
+            height: 3.2rem;
+            padding: 0;
+            background-color: transparent;
+            color: var(--text-color);
+            cursor: pointer;
+            border: none;
+      }
+
+      .calculator-display>button>svg {
+            width: 1.2rem;
+            height: 1.2rem;
+      }
+
+      .calculator-information {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+      }
+
+      .minus {
+            position: relative;
+            top: 3.8rem;
+            right: 2.5rem;
+      }
+
+      .plus {
+            position: relative;
+            bottom: 3.8rem;
+            left: 5.4rem;
+      }
+
+
+
+      .sum {
+            width: 9rem;
+            margin-left: 18rem;
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-size: 2.3rem;
+            font-style: normal;
+            color: var(--text-color);
+      }
+
+      .delete {
+            width: 4.2rem;
+            height: 4.2rem;
+            margin-left: 10rem;
+            background-color: transparent;
+            background-image: url(/img/svg/Delete.svg);
+            background-size: 10rem;
+            background-position-x: -2.9rem;
+            background-position-y: -1.95rem;
+            background-repeat: no-repeat;
+            border: none;
+
+      }
+
+
+      .container-end {
+            margin-top: 6rem;
+            margin-left: 106rem;
+      }
+
+      .text-promocode {
+            color: var(--text-color-grey);
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-size: 1.3rem;
+            font-style: normal;
+      }
+
+      .container-input-promocode {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+      }
+
+
+      .promocode-input {
+            width: 22rem;
+            height: 4rem;
+            outline: none;
+            border: none;
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-size: 2rem;
+            font-style: normal;
+      }
+
+      .promocode-button {
+            width: 15rem;
+            height: 4.4rem;
+            background-color: transparent;
+            border: 0.3rem solid var(--text-color-yellow);
+            color: var(--text-color-yellow);
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-size: 1.3rem;
+            font-style: normal;
+            letter-spacing: 0.3rem;
+      }
+
+
+      .container-payment-text {
+            display: flex;
+            align-items: center;
+            height: 6rem;
+            gap: 1rem;
+      }
+
+      .payment-text {
+            color: var(--text-color-grey);
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-size: 1.3rem;
+            font-style: normal;
+      }
+
+      .payment-price {
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-size: 2.3rem;
+            font-style: normal;
+            color: var(--text-color);
+      }
+
+      .payment-button {
+            background-color: var(--text-color-yellow);
+            border: 0.3rem solid var(--text-color-yellow);
+            color: var(--text-color-black);
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-size: 1.3rem;
+            font-style: normal;
+            letter-spacing: 0.1rem;
+            width: 22rem;
+            height: 4rem;
+      }
+
