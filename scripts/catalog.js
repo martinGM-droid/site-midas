@@ -3,7 +3,10 @@ import { LoadJson } from "./base.js";
 const hoverScroll = document.querySelector('.container-card');
 
 export async function getCardInfCatalog() {
-      if(window.location.pathname === '/catalog.html'){
+          if (
+        window.location.pathname === '/' || 
+        window.location.pathname.endsWith('catalog.html')
+    ){
       const load = new LoadJson()
       const cardsLoad = load.localStorageGet('card')
       renderCardByCategory(cardsLoad)

@@ -3,6 +3,7 @@ import { LoadJson } from "./base.js";
 export async function getCardInfIndex() {
     if (
         window.location.pathname === '/' || 
+        window.location.pathname.endsWith('/') ||
         window.location.pathname.endsWith('index.html')
     ) {
         const load = new LoadJson()

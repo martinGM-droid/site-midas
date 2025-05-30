@@ -3,7 +3,10 @@ const params = new URLSearchParams(window.location.search);
 const category = params.get('dish');
 
 export async function getCardInfProductCard() {
-      if (window.location.pathname === '/product-card.html') {
+          if (
+        window.location.pathname === '/' || 
+        window.location.pathname.endsWith('product-card.html')
+      ) {
             const load = new LoadJson()
             const cardLoad = load.localStorageGet('card')
             renderCardByClick(cardLoad)

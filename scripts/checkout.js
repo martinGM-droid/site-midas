@@ -4,12 +4,15 @@ const load = new LoadJson()
 renderBuyCardInCheckout()
 
 export async function renderBuyCardInCheckout() {
-      if (window.location.pathname === '/checkout.html') {
+      if (
+            window.location.pathname === '/' ||
+            window.location.pathname.endsWith('checkout.html')
+      ) {
             console.log('ys')
             const cardsLoad = load.localStorageGet('card')
             renedrCardFromLocalStorage(cardsLoad)
             finalSum()
-      }else{
+      } else {
             console.log('no')
       }
 }
@@ -74,7 +77,7 @@ function renedrCardFromLocalStorage(event) {
 }
 
 
-function finalSum(){
+function finalSum() {
       const sumResult = document.querySelector('.final-sum-price')
       const allSum = document.querySelectorAll('.sum')
       const sumNum = Array.from(allSum).map(sum => parseInt(sum.textContent))

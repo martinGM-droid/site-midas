@@ -9,7 +9,10 @@ const cartInf = document.querySelector('.cart-count')
 
 
 export async function renderBuyCardInCart() {
-      if (window.location.pathname === '/cart.html') {
+      if (
+            window.location.pathname === '/' ||
+            window.location.pathname.endsWith('cart.html')
+      ) {
             const cardsLoad = load.localStorageGet('card')
             renedrCardFromLocalStorage(cardsLoad)
             cartInf.classList.add('visable')
@@ -206,13 +209,13 @@ function redactSum(priceColect, sumColect, button) {
                   count = card.count
                   priceColect.forEach(price => {
                         if (price.getAttribute('data-id') === button) {
-                         priceStr = price.textContent
-                         sumColect.forEach(sum => {
-                               if (sum.getAttribute('data-id') === button) {
-                                    sumStr =  parseInt(priceStr) * parseInt(count)  +" ₽"
-                                    sum.textContent = sumStr
-                              }
-                         })
+                              priceStr = price.textContent
+                              sumColect.forEach(sum => {
+                                    if (sum.getAttribute('data-id') === button) {
+                                          sumStr = parseInt(priceStr) * parseInt(count) + " ₽"
+                                          sum.textContent = sumStr
+                                    }
+                              })
                         }
                   })
             }
@@ -249,18 +252,18 @@ function redactBasketLocalStorageMinus(cardInf) { //* логика редакт�
 
 
 
-export function remuveButton(){
-      document.addEventListener('click', (event)=>{
+export function remuveButton() {
+      document.addEventListener('click', (event) => {
             const target = event.target
             let filterCards
-            if(target.closest('.delete')){
+            if (target.closest('.delete')) {
                   const cardRemoveButtonId = target.closest('.delete').getAttribute('data-id')
                   const cards = load.localStorageGet('basket');
                   filterCards = cards.filter(card => card.id !== cardRemoveButtonId)
                   remuveElemetDOM(+cardRemoveButtonId)
                   finalSum()
                   load.localStorageSet('basket', filterCards)
-                  CountOfCardsInCart() 
+                  CountOfCardsInCart()
             }
       })
 }
@@ -268,18 +271,18 @@ export function remuveButton(){
 
 
 
-function remuveElemetDOM(id){
+function remuveElemetDOM(id) {
       const element = document.querySelector(`[data-card-id="${id}"]`);
-        if (element) {
-    element.remove(); // Удаляет элемент из DOM
-  } else {
-    console.warn(`Элемент с data-card-id="${id}" не найден`);
-  }
+      if (element) {
+            element.remove(); // Удаляет элемент из DOM
+      } else {
+            console.warn(`Элемент с data-card-id="${id}" не найден`);
+      }
 
-}     
+}
 
 
-function finalSum(){
+function finalSum() {
       const sumResult = document.querySelector('.payment-price')
       const allSum = document.querySelectorAll('.sum')
       const sumNum = Array.from(allSum).map(sum => parseInt(sum.textContent))
