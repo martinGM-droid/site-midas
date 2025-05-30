@@ -1,4 +1,4 @@
-import { LoadJson } from "base.js";
+import { LoadJson } from "./base.js";
 
 export async function getCardInfIndex() {
       if (window.location.pathname === 'index.html') {
