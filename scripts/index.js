@@ -6,7 +6,7 @@ export async function getCardInfIndex() {
             const cardsLoad = load.localStorageGet('card')
             renderCard(cardsLoad)
       } else{
-            conole.log('no')
+            console.log('no')
       }
 }
 
