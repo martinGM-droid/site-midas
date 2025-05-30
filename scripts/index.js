@@ -1,13 +1,16 @@
 import { LoadJson } from "./base.js";
 
 export async function getCardInfIndex() {
-      if (window.location.pathname === 'index.html') {
-            const load = new LoadJson()
-            const cardsLoad = load.localStorageGet('card')
-            renderCard(cardsLoad)
-      } else{
-            console.log('no work')
-      }
+    if (
+        window.location.pathname === '/' || 
+        window.location.pathname.endsWith('index.html')
+    ) {
+        const load = new LoadJson()
+        const cardsLoad = load.localStorageGet('card')
+        renderCard(cardsLoad)
+    } else {
+        console.log('no work')
+    }
 }
 
 
