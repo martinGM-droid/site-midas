@@ -12,7 +12,7 @@ import { CalculatorCount } from "./utils.js";
 import { LoadJson } from "./base.js";
 
 
-LoadJson.fetchParseLoad('card', "/data/back.json")
+LoadJson.fetchParseLoad('card', "data/back.json")
 
 getCardInfIndex()
 getCardInfCatalog()

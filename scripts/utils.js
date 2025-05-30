@@ -1,6 +1,5 @@
 import { LoadJson } from "./base.js";
 import { Calculator } from "./base.js";
-import { renderBuyCardInCart } from "./cart.js";
 const params = new URLSearchParams(window.location.search);
 export const category = params.get('category'); //* получение параметра строки запроса
 
@@ -113,7 +112,7 @@ export function buyButton() { //* при клике загружает в localS
 export function comparisonToTheCollection(collection, obj) {//* логика для получения количества выброного товара
       let result
       collection.forEach(item => {
-            if (obj === item.getAttribute('data-id')) return result = +item.textContent
+            if (obj === item.getAttribute('data-id')) return result = parseInt(item.textContent)
       })
       return result
 }

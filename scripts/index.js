@@ -77,7 +77,7 @@ function renderCard(product) {
                         cardItem =
                               `
                               <div class="card-container">
-                                    <img src="/img/food/${img}" alt="${nameDish}" class="card-img">
+                                    <img src="img/food/${img}" alt="${nameDish}" class="card-img">
                                     <p class="name-dish">${nameType}</p>
                               <div class="weight-container">
                                     <p class="weight">${weight} г</p>
@@ -115,7 +115,7 @@ function renderCard(product) {
                   cardItem =
                         `
               <div class="card-container">
-                        <img src="/img/food/${img}" alt="${nameDish}" class="card-img">
+                        <img src="img/food/${img}" alt="${nameDish}" class="card-img">
                         <p class="name-dish">${nameDish}</p>
                         <div class="weight-container">
                               <p class="weight">${weight} г</p>

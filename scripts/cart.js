@@ -36,7 +36,7 @@ function renedrCardFromLocalStorage(event) {
                                     cardItem =
                                           `
                         <div class="cart-card" data-card-id="${id}">
-                              <img src="/img/food/${img}" alt="${nameType}" class="img-cart-card">
+                              <img src="img/food/${img}" alt="${nameType}" class="img-cart-card">
                               <div class="container-name-weight">
                                     <p class="name-cart-card">${nameType}</p>
                                     <div class="container-weight">
@@ -92,7 +92,7 @@ function renedrCardFromLocalStorage(event) {
                               cardItem =
                                     `
                         <div class="cart-card" data-card-id="${id}">
-                              <img src="/img/food/${img}" alt="${nameDish}" class="img-cart-card">
+                              <img src="img/food/${img}" alt="${nameDish}" class="img-cart-card">
                               <div class="container-name-weight">
                                     <p class="name-cart-card">${nameDish}</p>
                                     <div class="container-weight">
