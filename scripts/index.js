@@ -5,6 +5,8 @@ export async function getCardInfIndex() {
             const load = new LoadJson()
             const cardsLoad = load.localStorageGet('card')
             renderCard(cardsLoad)
+      } else{
+            conole.log('no')
       }
 }
 
