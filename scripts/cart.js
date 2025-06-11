@@ -170,7 +170,10 @@ export function changeQuantity() {
                         finalSum()
                   }
             }
-            if (window.location.pathname === '/cart.html') {
+            if (
+                  window.location.pathname === '/' || 
+                  window.location.pathname.endsWith('cart.html')
+            ) {
                   if (target.closest('.minus')) {
                         const buyButtonMinus = target.closest('.minus').getAttribute('data-id');
                         const countCard = document.querySelectorAll('.calculator-information')
