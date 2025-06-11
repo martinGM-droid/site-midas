@@ -477,7 +477,7 @@ details[open] .cold {
       width: 4.2rem;
       height: 4.2rem;
       background-color: var(--button-buy-color);
-      background-image: url(/img/svg/basket_black.svg);
+      background-image: url(../img/svg/basket_black.svg);
       background-size: 2.6rem;
       background-position: center;
       background-repeat: no-repeat;
