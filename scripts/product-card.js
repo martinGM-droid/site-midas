@@ -31,7 +31,7 @@ function renderCardByClick(event) {
                         const { id ,img, nameType, weight, description, price } = caTy
                         if (id === +category) {
                               cardImg = `
-                                    <img src="/img/food/${img}" alt="${nameType}" class="img-of-dish">
+                                    <img src="img/food/${img}" alt="${nameType}" class="img-of-dish">
                         `
                               cardName = `
                                     <p class="name-of-dishes">${nameType}</p>

@@ -97,7 +97,12 @@ export function buyButton() { //* при клике загружает в localS
                   const countCard = document.querySelectorAll('.calculator-information')
                   const calcRes = comparisonToTheCollection(countCard, buyButton)
                   let count = 1 //* базовое количесво
-                  if (window.location.pathname === '/product-card.html') count = calcRes  //* кастомое количество на определенной странице
+                  if (
+                        window.location.pathname === '/' || 
+                        window.location.pathname.endsWith('product-card.html')
+                  ){
+                        count = calcRes  //* кастомое количество на определенной странице
+                  } 
                   let purchasedItem = {
                         id: buyButton,
                         count: count

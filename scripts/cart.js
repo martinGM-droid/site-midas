@@ -149,7 +149,10 @@ function renedrCardFromLocalStorage(event) {
 export function changeQuantity() {
       document.addEventListener('click', (event) => {
             const target = event.target
-            if (window.location.pathname === '/cart.html') {
+            if (
+                  window.location.pathname === '/' || 
+                  window.location.pathname.endsWith('cart.html')
+            ) {
                   if (target.closest('.plus')) {
                         const buyButtonPlus = target.closest('.plus').getAttribute('data-id');
                         const countCard = document.querySelectorAll('.calculator-information')

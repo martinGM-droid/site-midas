@@ -97,7 +97,7 @@ function render(hasVariants, id, baseQuantity, variantType, typesOfDishes, img, 
                   cardItem =
                         `
                         <div class="card-container">
-                              <img src="/img/food/${img}" alt="${nameDish}" class="card-img">
+                              <img src="img/food/${img}" alt="${nameDish}" class="card-img">
                               <p class="name-dish">${nameType}</p>
                         <div class="weight-container">
                               <p class="weight">${weight} г</p>
@@ -135,7 +135,7 @@ function render(hasVariants, id, baseQuantity, variantType, typesOfDishes, img, 
             cardItem =
                   `
         <div class="card-container">
-                  <img src="/img/food/${img}" alt="${nameDish}" class="card-img">
+                  <img src="img/food/${img}" alt="${nameDish}" class="card-img">
                   <p class="name-dish">${nameDish}</p>
                   <div class="weight-container">
                         <p class="weight">${weight} г</p>
