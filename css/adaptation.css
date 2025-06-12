@@ -9,7 +9,6 @@ body {
 
 html{
       /* *1600 px */
-      /* font-size: clamp(5px, 0.73vw, 58px); */
       font-size: clamp(5px, 0.625vw, 58px);
 }
 
