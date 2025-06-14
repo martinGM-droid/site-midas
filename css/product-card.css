@@ -90,8 +90,8 @@
       box-sizing: border-box;
       background-color: var(--background-variety-card-color);
       align-items: center;
-      height: 10rem;
       width: 74rem;
+      height: 10rem;
 }
 
 .variety-name-weight {

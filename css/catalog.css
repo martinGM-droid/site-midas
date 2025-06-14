@@ -33,9 +33,9 @@
 
 
 
-.container-card-type-of-dishes{
-      margin-left: 5rem;
-}
+/* .container-card-type-of-dishes{
+    
+} */
 .container-sort-by-values{
       display: flex;
       justify-content: flex-end;
@@ -98,9 +98,11 @@
 .container-card{
       display: flex;
       overflow-x: auto;
+      overflow-y: hidden;
+      margin-left: 5rem;
       gap: 2rem;
       width: 150rem;
-      height: 50rem;
+      min-height: 50rem;
       scroll-behavior: smooth; 
      
 }

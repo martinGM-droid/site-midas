@@ -4,7 +4,7 @@
       display: flex;
       clear: both;
       position: relative;
-      height: 110rem;
+      height: 118rem;
 }
 
 
@@ -20,6 +20,7 @@
       background-image: url(../img/food/стейк_из_лосося.png);
       background-size: cover;
       background-repeat: no-repeat;
+      
       /* width: 40%; */
 }
 
@@ -112,12 +113,31 @@
       line-height: 9rem;
 }
 
-.section-container-end > div > p{
+
+.popular-dishes{
+      display: grid;
+      padding-left: 3rem;
+      padding-right: 2rem;
+      grid-template-columns: repeat(6, minmax(20rem, 24rem));
+      grid-gap: 2rem;
+}
+
+
+.menu-slider{
+      display: flex;
+      justify-items: center;
+      margin-top: 15rem;
+      margin-bottom: 5rem;
+}
+
+
+.menu-slider > p{
       width: 64.3rem;
+      text-align: center;
       /* height: 13.4rem; */
       color: var(--text-color);
       margin: auto;
-      margin-top: 15rem;
+      /* margin-top: 15rem; */
       font-family: "Montserrat", serif;
       font-size: 8rem;
       font-optical-sizing: auto;
@@ -129,12 +149,11 @@
 .slider-button-box{
       display: flex;
       gap: 3.5rem;
+      margin-right: 6rem;
 }
 
 .slider-btn{
-      position: relative;
-      bottom: 6rem;
-      left: 86.5%;
+      
       border: none;
       background-color: transparent;
 }
@@ -147,6 +166,16 @@
 
 .slider-box{
       display: inline-block;
+}
+
+.slider {
+      display: grid;
+      width: 150rem;
+      overflow-x: auto;
+      margin-left: 4.5rem;
+      margin-right: 4.5rem;
+      grid-template-columns: repeat(6, 23.3rem);
+      gap: 2rem;
 }
 
 .slider-list{
