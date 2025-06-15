@@ -2,7 +2,7 @@
 
 html,
 body {
-      overflow-x: hidden;
+      /* overflow-x: hidden; */
       height: 100vh;
       width: 100vw;
 }
@@ -41,6 +41,11 @@ html {
 
       .header-navbar-dropdown {
             display: block;
+      }
+
+
+      .footer-nav-one ul:nth-child(2) {
+            margin-right: 0rem;
       }
 
       /* !!!!!!!!!! index  */
@@ -91,11 +96,68 @@ html {
             margin-right: 1rem;
       }
 
+      .variety-description {
+            width: 40rem;
+      }
+
       /* !!!!!!!!!! cart  */
 
-      .container-center {
-            width: 3rem;
+      .container-cart-card {
+            width: 100rem;
       }
+
+      .cart-card {
+            width: 100rem;
+            height: 18rem;
+            margin-right: 0rem;
+            margin-left: 1rem;
+      }
+
+      .container-name-weight {
+            width: 25rem;
+            margin-left: 2rem;
+      }
+
+      .name-cart-card {
+            width: 25rem;
+      }
+
+      .cart-card-price {
+            width: 6.9rem;
+            margin-left: 3rem;
+            white-space: nowrap;
+      }
+
+      .cart-card-calculator {
+            margin-left: 5rem;
+      }
+
+      .sum {
+            width: 6.9rem;
+            margin-left: 5rem;
+            white-space: nowrap;
+      }
+
+      .delete {
+            margin-left: 13rem;
+      }
+
+      .container-end {
+            margin-right: 2rem;
+      }
+
+      /* !!!!!!!! checkout */
+
+      .cart-history {
+            /* position: relative; */
+            left: 0;
+            left: -40rem;
+            /* bottom: -40rem; */
+            transform: translateX(10%);
+            transition: .9s;
+      }
+
+      
 
 }
 

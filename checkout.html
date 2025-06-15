@@ -15,9 +15,9 @@
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap"
             rel="stylesheet">
       <link rel="stylesheet" href="css/global.css">
-      <link rel="stylesheet" href="css/adaptation.css">
-      <link rel="stylesheet" href="css/responsive.css">
       <link rel="stylesheet" href="css/checkout.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="css/adaptation.css">
       <!-- <link rel="stylesheet" href="/css/"> -->
       <title>Midas</title>
 </head>
@@ -103,15 +103,15 @@
                   </div>
                   <div class="header-navbar-dropdown">
                         <div class="dropdown-menu">
-                              <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
-                              <label class="burger" for="burger-checkbox">
+                              <input type="checkbox" id="show-cart" class="show-cart">
+                              <label class="burger" for="show-cart">
                                     <span aria-label="text" class="burger-text"></span>
                               </label>
                               <div class="menu">
                                     <img class="discount" src="/img/slider/акции.png" alt="">
                                     <div class="hot-container">
                                           <ul class="list">
-                                                      <p class="name-catalog">ГОРЯЧЕЕ:</p>
+                                                <p class="name-catalog">ГОРЯЧЕЕ:</p>
                                                 <li class="dishes">
                                                       <img src="img/burger/Горячие_блюда.png" alt="">
                                                       <p><a class="type-of-dish-nav hotDishes"
@@ -236,12 +236,16 @@
                                           </div>
                                     </div>
                               </div>
-                              <div class="cart-history">
-                                    <div class="cart-history-box-card">
-                                    </div>
-                                    <div class="final-sum-container">
-                                          <p class="final-sum-text">Итого к оплате:</p>
-                                          <p class="final-sum-price">2 580 ₽</p>
+                              <div class="cart-history-container">
+                                    <input type="checkbox" id="show-cart" class="show-cart">
+                                    <label class="show" for="show-cart"></label>
+                                    <div class="cart-history">
+                                          <div class="cart-history-box-card">
+                                          </div>
+                                          <div class="final-sum-container">
+                                                <p class="final-sum-text">Итого к оплате:</p>
+                                                <p class="final-sum-price">2 580 ₽</p>
+                                          </div>
                                     </div>
                               </div>
                         </div>
