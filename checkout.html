@@ -103,8 +103,8 @@
                   </div>
                   <div class="header-navbar-dropdown">
                         <div class="dropdown-menu">
-                              <input type="checkbox" id="show-cart" class="show-cart">
-                              <label class="burger" for="show-cart">
+                              <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                              <label class="burger" for="burger-checkbox">
                                     <span aria-label="text" class="burger-text"></span>
                               </label>
                               <div class="menu">
@@ -238,7 +238,32 @@
                               </div>
                               <div class="cart-history-container">
                                     <input type="checkbox" id="show-cart" class="show-cart">
-                                    <label class="show" for="show-cart"></label>
+                                    <label class="show" for="show-cart">
+                                          <img src="img/svg/basket.svg" alt="" class="show-img">
+                                          <p class="show-text">Ваш заказ скрыт здесь :)</p>
+                                          <div class="show-info">
+                                                <div class="visible svg-img">
+                                                      <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                  d="M4.19536 8.5L10 2.25696L7.90154 0L0 8.49832L0.00156592 8.5L0 8.50168L7.90154 17L10 14.743L4.19536 8.5ZM11.5172 8.5L15 5.19486L13.7409 4L9 8.49911L9.00094 8.5L9 8.50089L13.7409 13L15 11.8051L11.5172 8.5Z"
+                                                                  fill="white" />
+                                                      </svg>
+                                                </div>
+                                                <div class="no-visible svg-img">
+                                                      <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                  d="M10.8046 8.5L5 14.743L7.09846 17L15 8.50168L14.9984 8.5L15 8.49832L7.09847 -6.90774e-07L5 2.25695L10.8046 8.5ZM3.48278 8.5L1.40782e-06 11.8051L1.25908 13L6 8.50089L5.99906 8.5L6 8.49911L1.25908 4L1.03204e-06 5.19486L3.48278 8.5Z"
+                                                                  fill="white" />
+                                                      </svg>
+                                                </div>
+                                                <p class="visible text-show">Раскрыть
+                                                      Список</p>
+                                                <p class="no-visible text-show">Скрыть
+                                                      Список</p>
+                                          </div>
+                                    </label>
                                     <div class="cart-history">
                                           <div class="cart-history-box-card">
                                           </div>
