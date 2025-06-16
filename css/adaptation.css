@@ -433,20 +433,23 @@ html {
             width: 66rem;
       }
 
+      .container-contact-information-input{
+            margin-left: 0;
+      }
       .cart-history {
-            left: -72rem;
+            left: -62rem;
             top: -10rem;
-            transform: translateX(100%);
+            transform: translateX(101%);
             /* transform: translateX(0); */
 
       }
 
       .show {
             display: flex;
-            right: 84.8rem;
+            right: 74.8rem;
             /* right: 0; */
             bottom: 10rem;
-            transform: translateX(470%);
+            transform: translateX(473%);
             /* transform: translateX(0); */
       }
 
