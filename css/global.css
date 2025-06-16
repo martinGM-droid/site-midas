@@ -318,10 +318,10 @@ details[open] .cold {
 
 /* * */
 
-.dropdown-menu {
-      /* width: 40rem; */
-      /* overflow: hidden; */
-}
+/* .dropdown-menu {
+      width: 40rem;
+      overflow: hidden;
+} */
 
 .menu {
       position: absolute;
@@ -358,7 +358,14 @@ details[open] .cold {
       height: 29rem;
 }
 
-.hot-container {}
+.discount-768 {
+      display: none;
+      width: 73rem;
+      height: 9rem;
+      grid-column: span 2;
+      justify-self: center;
+      margin-bottom: 4rem;
+}
 
 .list {
       height: 29rem;
@@ -680,6 +687,7 @@ details[open] .cold {
       margin-top: 16rem;
       width: 100vw;
       height: 16rem;
+      height: auto;
       background-color: var(--background-dropdown-color);
       font-family: "Montserrat", serif;
       font-optical-sizing: auto;

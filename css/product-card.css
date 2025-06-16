@@ -30,17 +30,28 @@
       gap: 6.5rem;
 }
 
-.container-center>div {
-      height: 53.5rem;
-      width: 74.5rem;
-      /* background-color: rgba(127, 255, 212, 0.256); */
+.container-center {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6.5rem;
 }
+
+/* .container-center>div {
+      height: 53.5rem;
+      width: 74.5rem; 
+       background-color: rgba(127, 255, 212, 0.256);
+} */
 
 .img-of-dish {
       margin-top: 3rem;
       height: 53.5rem;
       width: 74.5rem;
 }
+
+.container-variety{
+      
+}
+
 
 .variety-text {
       letter-spacing: 0.25rem;
@@ -54,9 +65,10 @@
 
 
 .variety-card-container {
-      width: 74rem;
-      height: 34rem;
       display: grid;
+      grid-template-columns: 1fr;
+      /* width: 74rem; */
+      height: 34rem;
       overflow-y: auto;
       overflow-x: hidden;
       gap: 1rem

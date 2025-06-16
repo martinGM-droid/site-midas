@@ -51,7 +51,7 @@
             font-style: normal;
       }
 
-      /* .label:first-child {
+      .label:first-child {
             left: 2rem;
       }
 
@@ -66,7 +66,7 @@
 
       .label:last-child {
             left: 86rem;
-      } */
+      }
 
 
       .container-cart-card {
@@ -92,6 +92,7 @@
       .cart-card {
             display: flex;
             width: 150rem;
+            width: 95%;
             height: 18rem;
             margin-left: 5rem;
             margin-right: 4rem;

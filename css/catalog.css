@@ -102,6 +102,7 @@
       margin-left: 5rem;
       gap: 2rem;
       width: 150rem;
+      width: 100vw;
       min-height: 50rem;
       scroll-behavior: smooth; 
      

@@ -112,6 +112,11 @@ input {
       height: 4rem;
 }
 
+.cart-history-container{
+      position: relative;
+}
+
+
 .show-cart {
       position: absolute;
       visibility: hidden;
@@ -212,10 +217,12 @@ input {
 }
 
 
+
 .cart-history {
       position: relative;
+      position: absolute;
       left: 6rem;
-      bottom: 20rem;
+      top: -18.5rem;
       width: 61rem;
       height: 68rem;
       /* transform: translateX(110%); */
@@ -398,6 +405,7 @@ input {
       margin-left: 2rem;
       margin-bottom: 1rem;
       color: var(--text-color);
+      white-space: nowrap;
       font-family: "Montserrat", serif;
       font-size: 2.3rem;
       font-optical-sizing: auto;
@@ -466,7 +474,7 @@ input {
       gap: 2rem;
       width: 50.5rem;
       height: 25.5rem;
-      margin-left: 50rem;
+      margin-left: 12rem;
 }
 
 .delivery-address p {
@@ -558,13 +566,16 @@ input {
 
 .choice-of-payment {
       display: grid;
+      /* grid-template-columns: 81rem; */
+      grid-template-columns: 0.55fr;
+ 
       gap: 2rem;
 }
 
 .choice-of-payment>div {
       display: flex;
       margin-left: 5rem;
-      width: 81rem;
+      /* width: 81rem; */
       min-height: 10rem;
       /* height: 10rem; */
       border: 0.2rem dashed var(--text-color-grey);
@@ -632,7 +643,7 @@ label {
 .choice-of-payment input[type="radio"]:checked+label {
       height: 13rem;
       scale: 1.02;
-      margin-left: 10rem;
+      margin-left: 1rem;
 }
 
 .choice-of-payment input[type="radio"]:checked+label p {

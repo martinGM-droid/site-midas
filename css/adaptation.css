@@ -75,7 +75,21 @@ html {
             margin-left: 1.5rem;
       }
 
-      /* !!!!!!!!!! catalog  */
+      /* !!!!!!!!!! product-card  */
+
+      .container-name-of-dishes {
+            margin-left: 2.4rem;
+      }
+
+      .name-of-dishes {
+            width: 90rem;
+            font-size: 6rem;
+      }
+
+      .history {
+            margin-left: 2.3rem;
+      }
+
       .img-of-dish {
             margin-top: 3rem;
             height: 33.5rem;
@@ -102,12 +116,32 @@ html {
 
       /* !!!!!!!!!! cart  */
 
+
+      .label:first-child {
+            left: -9.5rem;
+      }
+
+      .label:nth-child(2) {
+            left: 13rem;
+      }
+
+      .label:nth-child(3) {
+            left: 21.5rem;
+      }
+
+
+      .label:last-child {
+            left: 28rem;
+      }
+
       .container-cart-card {
             width: 100rem;
+            width: 100vw;
       }
 
       .cart-card {
             width: 100rem;
+            width: 98%;
             height: 18rem;
             margin-right: 0rem;
             margin-left: 1rem;
@@ -149,26 +183,321 @@ html {
       /* !!!!!!!! checkout */
 
       .cart-history {
-            /* position: relative; */
-            left: 0;
             left: -46rem;
-            bottom: 50rem;
+            top: -10.5rem;
             transform: translateX(100%);
       }
 
       .show {
             display: flex;
             right: 58.5rem;
-            bottom: 12.5rem;
+            /* right: 0; */
+            bottom: 10.5rem;
             transform: translateX(465%);
       }
-      
-      .delivery-address{
-            margin-left: 20rem;
+
+      .choice-of-payment {
+            grid-template-columns: 0.8fr;
       }
+
+      /* .delivery-address {
+            margin-left: 20rem;
+      } */
 }
 
+@media (max-width: 770px) {
+      html {
+            /* *768px */
+            font-size: clamp(5px, 1.302vw, 58px);
+      }
 
+
+      .footer-nav-one {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-nav-one ul:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            grid-column: 1;
+            grid-row: 2;
+      }
+
+      .footer-nav-one ul:nth-child(3) {
+            display: flex;
+            justify-content: center;
+            grid-column: 2;
+            grid-row: 1;
+      }
+
+      .footer-nav-one ul:nth-child(2) li a {
+            white-space: nowrap;
+      }
+
+      .footer-nav-one ul:nth-child(3) li p {
+            white-space: nowrap;
+      }
+
+      .footer-nav-two {
+            display: grid;
+            grid-template-columns: 1fr;
+
+      }
+
+      .dropdown-menu {
+            width: 30rem;
+      }
+
+      .menu {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 13rem auto;
+      }
+
+      .discount {
+            display: none;
+      }
+      
+
+      /* !!!!! index */
+
+
+      .hot-container {
+            margin-left: 3rem;
+      }
+
+      .cold-container {
+            margin-left: 3rem;
+            grid-column: 1;
+            grid-row: 3
+      }
+
+      .discount-768 {
+            display: block;
+      }
+
+      .popular-dishes {
+            padding-left: 2rem;
+            grid-template-columns: repeat(3, minmax(20rem, 24rem));
+      }
+
+      .slider {
+            width: 70rem;
+      }
+
+      /* !!!!!!!!!! catalog  */
+
+      .container-type-of-dishes{
+            margin-left: 1.3rem;
+      }
+
+      .type-of-dishes{
+            font-size: 7rem;
+      }
+
+
+      .container-card {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(20rem, 24rem));
+            gap: 1rem;
+            margin-left: 1.5rem;
+      }
+
+
+      /* !!!!!!!!!! product-card  */
+
+      .container-name-of-dishes {
+            margin-left: 2.4rem;
+      }
+
+      .name-of-dishes {
+            width: 50rem;
+            height: auto;
+            font-size: 6rem;
+      }
+
+      .container-center {
+            display: grid;
+            grid-template-columns: 1fr;
+      }
+
+      .img-of-dish {
+            margin-top: 3rem;
+            width: 74.5rem;
+            width: 100%;
+            height: 53.5rem;
+      }
+
+      .variety-card {
+            margin-left: 2rem;
+            margin-right: 2rem;
+            width: 95%;
+      }
+
+      .variety-prise-container {
+            margin-right: 3rem;
+      }
+
+      .variety-name {
+            white-space: nowrap;
+      }
+
+      .food-recommendations {
+            width: 80%;
+
+      }
+
+      /* !!!!!!!!!! cart  */
+
+
+      .column-label {
+            margin-left: 2rem;
+      }
+
+      .label:first-child {
+            left: 0rem;
+      }
+
+      .label:nth-child(2) {
+            left: 0rem;
+      }
+
+      .label:nth-child(3) {
+            left: 0rem;
+      }
+
+
+      .label:last-child {
+            left: 0rem;
+      }
+
+      .container-cart-card {
+            width: 100vw;
+            grid-auto-rows: 12rem;
+      }
+
+      .cart-card {
+            flex-wrap: wrap;
+            position: relative;
+            width: 95.5%;
+            height: 12rem;
+      }
+
+      .img-cart-card {
+            width: 12rem;
+            height: 12rem;
+      }
+
+      .container-name-weight {
+            width: 15rem;
+            margin-left: 2rem;
+      }
+
+      .name-cart-card {
+            width: 15rem;
+      }
+
+      .cart-card-price {
+            width: 6.9rem;
+            margin-left: 6rem;
+            white-space: nowrap;
+      }
+
+      .cart-card-calculator {
+            margin-left: 3rem;
+      }
+
+      .sum {
+            width: 6.9rem;
+            margin-left: 3rem;
+            white-space: nowrap;
+      }
+
+      .delete {
+            width: 3rem;
+            height: 3rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-size: 7.2rem;
+            background-position-x: -2.1rem;
+            background-position-y: -1.4rem;
+
+            margin-left: 3rem;
+      }
+
+      /* !!!!!!!! checkout */
+
+
+      .line-contact-information {
+            width: 66rem;
+      }
+
+      .cart-history {
+            left: -72rem;
+            top: -10rem;
+            transform: translateX(100%);
+            /* transform: translateX(0); */
+
+      }
+
+      .show {
+            display: flex;
+            right: 84.8rem;
+            /* right: 0; */
+            bottom: 10rem;
+            transform: translateX(470%);
+            /* transform: translateX(0); */
+      }
+
+      .line-delivery-method{
+            width: 66rem;
+      }
+
+      .contactless-delivery {
+            width: 29rem;
+            height: 20rem;
+      }
+
+      .contactless-delivery>p:nth-child(2) {
+            width: 19rem;
+            height: 10rem;
+      }
+
+      .contactless-delivery-price p:nth-child(1) {
+            width: 17rem;
+      }
+
+
+      .contactless-delivery-price p:nth-child(2) {
+            margin-left: 0;
+      }
+
+      .pickup {
+            width: 29rem;
+            height: 20rem;
+      }
+
+      .pickup-price p:nth-child(2) {
+            margin-left: 7rem;
+      }
+
+      .delivery-address {
+            margin-left: 10rem;
+      }
+
+      .container-end {
+            margin-top: 10rem;
+      }
+
+      .line-payment{
+            width: 66rem;
+      }
+
+      .choice-of-payment {
+            grid-template-columns: 0.9fr;
+      }
+}
 
 
 
